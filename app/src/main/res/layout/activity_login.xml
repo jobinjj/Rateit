@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.techpakka.rateit.RegisterActivity">
+    <ImageView
+        android:layout_width="132dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_rateit"
+        android:id="@+id/imageView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="First time? Create an account and start
+Rating various products on internet"
+        android:textAlignment="center"
+        android:textColor="#70000000"
+        android:id="@+id/textView3" />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="20dp">
+        <RelativeLayout
+            android:id="@+id/rl_ed1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="55dp"
+            android:layout_marginStart="55dp">
+            <EditText
+                android:id="@+id/ed1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Email"
+                android:paddingLeft="50dp"
+                android:textColorHint="@color/colorAccent"
+                android:background="@drawable/ed_background"/>
+            <ImageView
+                android:id="@+id/envelope"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/ic_mail_black_envelope_symbol"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rl_ed2"
+            android:layout_marginEnd="55dp"
+            android:layout_marginStart="55dp"
+            android:layout_below="@+id/rl_ed1">
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Password"
+                android:paddingLeft="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/ed_bg_grey" />
+
+            <ImageView
+                android:id="@+id/padlock"
+                android:layout_width="18dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/ic_padlock"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_ed3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="55dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="55dp"
+            android:layout_below="@+id/rl_ed2">
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Confirm password"
+                android:paddingLeft="50dp"
+                android:background="@drawable/ed_bg_grey" />
+            <ImageView
+                android:id="@+id/padlock2"
+                android:layout_width="18dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/ic_padlock"/>
+        </RelativeLayout>
+
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_ed3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_bg"
+            android:text="SIGN IN"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:textColor="#fff"
+            android:id="@+id/button2" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button2"
+            android:layout_marginTop="34dp">
+
+            <TextView
+                android:id="@+id/dont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't have an account?"
+                android:textColor="#6a000000"
+                />
+            <TextView
+                android:layout_marginLeft="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign up"
+                android:textColor="@color/colorAccent"
+                android:layout_toRightOf="@+id/dont"/>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
